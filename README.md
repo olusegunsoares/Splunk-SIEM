@@ -41,7 +41,7 @@ They demonstrate both the configuration steps I performed and the dashboards I c
 
 ### Dashboards
 - Event Counts (all Windows logs).  
-![Dashboard 1](screenshots/TechCorp 1.png)  
+![Dashboard 1](screenshots/TechCorp1.png)  
 
 - Failed Logons by User.  
 ![Dashboard 2](screenshots/dashboard2.png)  
