@@ -25,16 +25,34 @@ The goal was to ingest Windows Event Logs, create security-focused dashboards, c
   - Bar charts, line graphs, pie charts with custom colors.  
 
 ## Screenshots
-Screenshots of the dashboards are included in the `/screenshots` folder.  
-These demonstrate live event counts, charts, and alert outputs.
+## 📸 Screenshots & Demo
 
-## How to Reproduce
-1. Install Splunk Enterprise (free trial or developer license).  
-2. Install Splunk Universal Forwarder on a Windows machine.  
-3. Configure inputs to monitor Security, System, and Application logs.  
-4. Import the provided XML dashboard file (`/dashboards/siem_dashboard.xml`) into Splunk.  
-5. Generate test events (logon, failed logon, user privilege changes).  
-6. Observe populated panels and test alert triggers.  
+Below are selected screenshots from my Splunk SIEM lab project.  
+They demonstrate both the configuration steps I performed and the dashboards I created.
+
+### Data Onboarding
+- Configured `inputs.conf` and `outputs.conf` for the Splunk Universal Forwarder.  
+- Successfully ingested Windows Event Logs (Security, Application, System).  
+![inputs.conf example](screenshots/inputs_conf.png)
+
+### Search Queries (SPL)
+- Example query to detect failed logon attempts (EventCode 4625).  
+![SPL Query](screenshots/spl_query.png)
+
+### Dashboards
+- Event Counts (all Windows logs).  
+![Dashboard 1](screenshots/dashboard1.png)  
+
+- Failed Logons by User.  
+![Dashboard 2](screenshots/dashboard2.png)  
+
+- Privileged Logons (EventCode 4672).  
+![Dashboard 3](screenshots/dashboard3.png)  
+
+### Alerts
+- Configured real-time alert for failed logons (EventCode 4625).  
+![Alert Setup](screenshots/alert_setup.png)
+
 
 ## Learning Outcomes
 - Built a SIEM workflow from scratch.  
