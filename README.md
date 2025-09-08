@@ -41,7 +41,7 @@ They demonstrate both the configuration steps I performed and the dashboards I c
 
 ### Dashboards
 - Event Counts (all Windows logs).  
-![Dashboard 1](screenshots/eventcounts.png)  
+![Dashboard 1](eventcounts.png)
 
 - Failed Logons by User.  
 ![Dashboard 2](screenshots/dashboard2.png)  
