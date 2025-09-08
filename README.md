@@ -34,13 +34,13 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
 ### Dashboards
 
 - Event Counts (all Windows logs)  
-![Event Counts](eventcounts.jpg)
+![Event Counts](eventcounts.png)
 
 - Failed Logons by User  
-![Failed Logons](logonattempts.jpg)
+![Failed Logons](logonattempts.png)
 
 - Privileged Logons (EventCode 4672)  
-![Privileged Logons](explicitcredentials.jpg)
+![Privileged Logons](explicitcredentials.png)
 
 
 ### Alerts
@@ -58,4 +58,4 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
 
 ### Author
 Olusegun Soares – Cybersecurity Enthusiast  
-[LinkedIn Profile](#) | [GitHub Profile](#)
+[LinkedIn Profile](https://www.linkedin.com/in/olusegun-soares-59862582/) | [GitHub Profile](#)
