@@ -40,7 +40,7 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
 ![Failed Logons](logonattempts.jpg)
 
 - Privileged Logons (EventCode 4672)  
-![Privileged Logons] explicitcredentials.jpg
+![Privileged Logons](explicitcredentials.jpg)
 
 
 ### Alerts
