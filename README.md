@@ -41,7 +41,7 @@ They demonstrate both the configuration steps I performed and the dashboards I c
 
 ### Dashboards
 - Event Counts (all Windows logs).  
-![Event Counts](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/eventcounts.png)
+![Event Counts](https://github.com/olusegunsoares/Splunk-SIEM/blob/b8d7c703a3789a32c62f553596e6bec15fe730a1/eventcounts.png)
 
 - Failed Logons by User.  
 ![Dashboard 2](screenshots/dashboard2.png)  
