@@ -32,14 +32,16 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
 ![SPL Query](screenshots/spl_query.png)
 
 ### Dashboards
-- Event Counts (all Windows logs).  
-![Dashboard 1](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/eventcounts.png)  
 
-- Failed Logons by User.  
-![Dashboard 2](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/logonattempts.png) 
+- Event Counts (all Windows logs)  
+![Event Counts](eventcounts.png)
 
-- Privileged Logons (EventCode 4672).  
-![Dashboard 3](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/explicitcredentials.png)  
+- Failed Logons by User  
+![Failed Logons](logonattempts.png)
+
+- Privileged Logons (EventCode 4672)  
+![Privileged Logons](explicitcredentials.png)
+
 
 ### Alerts
 - Configured real-time alert for failed logons (EventCode 4625).  
