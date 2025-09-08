@@ -58,4 +58,4 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
 
 ### Author
 Olusegun Soares – Cybersecurity Enthusiast  
-[LinkedIn Profile](https://www.linkedin.com/in/olusegun-soares-59862582/) | [GitHub Profile](#)
+[LinkedIn Profile](https://www.linkedin.com/in/olusegun-soares-59862582/) | [GitHub Profile](https://github.com/olusegunsoares)
