@@ -1,32 +1,58 @@
-# Splunk SIEM Dashboards – TechCorp Lab
+# Splunk SIEM Lab – Windows Event Log Monitoring
 
-This repository showcases my hands-on experience with Splunk, including dashboards, alerts, and log monitoring for Windows Event Logs.  
+## Overview
+This project demonstrates hands-on experience with Splunk Enterprise for Security Information and Event Management (SIEM).  
+The goal was to implent Windows Event Logs, create security-focused dashboards, configure alerts, and implement SOC analyst workflows to enhance the security operations of the organization.
 
-## Dashboards
+## Data Sources
+- **Windows Event Logs** from a forwarder:
+  - Security
+  - System
+  - Application
 
-### 1. Event Counts (all Windows logs)  
-![Event Counts](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/eventcounts.png)
+## Key Features
+- **Dashboards**  
+  - Authentication activity (Event ID 4624 – logon, 4625 – failed logon)  
+  - Privilege escalation (4672, 4717)  
+  - Credential use (4648, 4798, 4799)  
+  - Kerberos / cryptographic events (5058, 5059, 5061, 5379, 5382)  
+  - System changes (4616 – time change, 4732 – group membership)  
+- **Alerts**  
+  - Real-time and scheduled alerts for suspicious activity (e.g., failed logon spikes, time changes, privilege use).  
+- **Drilldowns**  
+  - Click-through on panels to pivot into raw event data for deeper investigation.  
+- **Visualizations**  
+  - Bar charts, line graphs, pie charts with custom colors.  
 
-### 2. Failed Logons by User  
-![Failed Logons](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/explicitcredentials.png)
+### Search Queries (SPL)
+- Example query to detect failed logon attempts (EventCode 4625).  
+![SPL Query](screenshots/spl_query.png)
 
-### 3. Privileged Logons (EventCode 4672)  
-![Privileged Logons](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/logonattempts.png)
+### Dashboards
+- Event Counts (all Windows logs).  
+![Dashboard 1](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/eventcounts.png)  
 
-### 4. Logon Attempts (EventCode 4624 / 4648)  
-![Logon Attempts](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/logonattempts2.png)
+- Failed Logons by User.  
+![Dashboard 2](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/logonattempts.png) 
 
-### 5. Security Policy Changes (EventCode 4717 / 4732)  
-![Security Policy Changes](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/securitypolicy.png)
+- Privileged Logons (EventCode 4672).  
+![Dashboard 3](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/explicitcredentials.png)  
 
-### 6. Account Management Events (EventCode 4798 / 4799 / 5382)  
-![Account Management](https://github.com/olusegunsoares/Splunk-SIEM/raw/main/accountmanagement.png)
+### Alerts
+- Configured real-time alert for failed logons (EventCode 4625).  
+![Alert Setup](screenshots/alert_setup.png)
+ 
+
+## Learning Outcomes
+- Built a SIEM workflow from scratch.  
+- Practiced detection and alerting on Windows security events.  
+- Developed dashboards useful for SOC analyst monitoring.  
+- Gained hands-on experience with Splunk search (SPL), alerting, and dashboard customization.  
 
 ---
 
-## Summary
-
-These dashboards illustrate:  
-- Real-time monitoring of Windows Event Logs.  
-- Detection of failed logons, privileged account access, and policy changes.  
-- Practical application of Splunk searches, alerts, and drilldowns.  
+### Author
+Olusegun Soares – Cybersecurity Enthusiast  
+[LinkedIn Profile](#) | [GitHub Profile](#)
+Olusegun Soares – Cybersecurity Enthusiast  
+[LinkedIn Profile](#) | [GitHub Profile](#)
