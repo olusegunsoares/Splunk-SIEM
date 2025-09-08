@@ -29,18 +29,18 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
 
 ### Search Queries (SPL)
 - Example query to detect failed logon attempts (EventCode 4625).  
-![SPL Query](screenshots/spl_query.png)
+![SPL Query](screenshots/spl_query.jpg)
 
 ### Dashboards
 
 - Event Counts (all Windows logs)  
-![Event Counts](eventcounts.png)
+![Event Counts](eventcounts.jpg)
 
 - Failed Logons by User  
-![Failed Logons](logonattempts.png)
+![Failed Logons](logonattempts.jpg)
 
 - Privileged Logons (EventCode 4672)  
-![Privileged Logons](explicitcredentials.png)
+![Privileged Logons](explicitcredentials.jpg)
 
 
 ### Alerts
