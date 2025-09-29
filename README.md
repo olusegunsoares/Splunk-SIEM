@@ -35,16 +35,16 @@ This project demonstrates hands-on experience with Splunk Enterprise for Securit
 - Event Counts (all Windows logs)  
 ![Event Counts](eventcounts.png)
 
-- Failed Logons by User (EventCode 4672): Shows the number of unsuccessful login attempts, helping identify possible brute-force or unauthorized access attempts.
+- Failed Logons by User (Event Code 4672): Shows the number of unsuccessful login attempts, helping identify possible brute-force or unauthorized access attempts.
 ![Failed Logons](logonattempts.png)
 
-- Privileged Logons (EventCode 4672): Tracks logins where special administrative privileges were assigned, highlighting high-risk activity.
+- Privileged Logons (Event Code 4672): Tracks logins where special administrative privileges were assigned, highlighting high-risk activity.
 ![Privileged Logons](explicitcredentials.png)
 
-- System Security & Credential Operations: Captures events related to account security changes, credential use, and sensitive operations on the system.
+- System Security & Credential Operations (Event Code 4616, 4717, 5379, 4797, 5058, 5059,5061): Captures events related to account security changes, credential use, and sensitive operations on the system.
 ![System Security & Credential Operations](systemsecurityevents&credentialoperations.png)
 
-- Explicit credentials & Group Membership: Records when accounts use explicit credentials or are added to groups, which may indicate privilege escalation
+- Explicit credentials & Group Membership (Event Code 4648, 4732, 4798, 4799): Records when accounts use explicit credentials or are added to groups, which may indicate privilege escalation
 ![Explicit credentials & Group Membership](explicitcredentials&groupmembershipchanges.png)
 
 ### Alerts
@@ -52,9 +52,12 @@ This project demonstrates hands-on experience with Splunk Enterprise for Securit
 ![Triggered Alerts](triggeredalerts.png)
 
 ## Learning Outcomes
-- Built a SIEM workflow from scratch.  
-- Implemented detection and alerting on Windows security events.  
-- Developed dashboards for SOC analyst monitoring.  
+- Designed and implemented a complete SIEM workflow.  
+- Developed dashboards for SOC analyst monitoring.
+- Configured detection rules and alerts for Windows security events.
+- Applied log analysis techniques to identify anomalies and potential threats.
+- Correlated event sources to improve incident detection accuracy.
+- Documented detection use cases and operational procedures for SOC reference.
 - Proven hands-on experience with Splunk search (SPL), alerting, and dashboard customization.  
 
 ---
