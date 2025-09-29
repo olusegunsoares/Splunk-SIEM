@@ -27,8 +27,8 @@ This project demonstrates hands-on experience with Splunk Enterprise for Securit
   - Bar charts, line graphs, pie charts with custom colors.  
 
 ### Search Queries (SPL)
-- Example query to detect failed logon attempts (EventCode 4625).  
-![SPL Query](screenshots/spl_query.jpg)
+- Example query to detect failed logon attempts (Event Code 4625).  
+![SPL Query](splquery.png)
 
 ### Dashboards
 
