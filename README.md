@@ -1,8 +1,7 @@
 # Splunk SIEM Lab – Windows Event Log Monitoring
 
 ## Overview
-This project demonstrates hands-on experience with Splunk Enterprise for Security Information and Event Management (SIEM).  
-The goal was to implent Windows Event Logs, create security-focused dashboards, configure alerts, and implement SOC analyst workflows to enhance the security operations of the organization.
+This project demonstrates hands-on experience with Splunk Enterprise for Security Information and Event Management (SIEM). The goal was to implent Windows Event Logs, create security-focused dashboards, configure alerts, and implement SOC analyst workflows to enhance the security operations of the organization.
 
 ## Data Sources
 - **Windows Event Logs** from a forwarder:
@@ -16,7 +15,7 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
   - Privilege escalation (4672, 4717)  
   - Credential use (4648, 4798, 4799)  
   - Kerberos / cryptographic events (5058, 5059, 5061, 5379, 5382)  
-  - System changes (4616 – time change, 4732 – group membership)
+  - Explicit credentials & Group membership (4648, 4732)
   
 - **Alerts**  
   - Real-time and scheduled alerts for suspicious activity (e.g., failed logon spikes, time changes, privilege use).
@@ -36,17 +35,21 @@ The goal was to implent Windows Event Logs, create security-focused dashboards, 
 - Event Counts (all Windows logs)  
 ![Event Counts](eventcounts.png)
 
-- Failed Logons by User  
+- Failed Logons by User (EventCode 4672): Shows the number of unsuccessful login attempts, helping identify possible brute-force or unauthorized access attempts.
 ![Failed Logons](logonattempts.png)
 
-- Privileged Logons (EventCode 4672)  
+- Privileged Logons (EventCode 4672): Tracks logins where special administrative privileges were assigned, highlighting high-risk activity.
 ![Privileged Logons](explicitcredentials.png)
 
+- System Security & Credential Operations: Captures events related to account security changes, credential use, and sensitive operations on the system.
+![System Security & Credential Operations](systemsecurityevents&credentialoperations.png)
+
+- Explicit credentials & Group Membership: Records when accounts use explicit credentials or are added to groups, which may indicate privilege escalation
+![Explicit credentials & Group Membership](explicitcredentials&groupmembershipchanges.png)
 
 ### Alerts
-- Configured real-time alert for failed logons (EventCode 4625).  
-![Alert Setup](screenshots/alert_setup.png)
- 
+- Configured real-time alert for logons and security operations.  
+![Triggered Alerts](triggeredalerts.png)
 
 ## Learning Outcomes
 - Built a SIEM workflow from scratch.  
